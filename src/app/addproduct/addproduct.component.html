@@ -6,41 +6,41 @@
                 <div class="row g-3">
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">procode</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="procode" [(ngModel)]="procode" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">proname</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="proname"[(ngModel)]="proname" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">date</label>
-                        <input type="date" name="" id="" class="form-control">
+                        <input type="date" name="" id="" name="date"[(ngModel)]="date" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">expirydate</label>
-                        <input type="date" name="" id="" class="form-control">
+                        <input type="date" name="" id=""name="expirydate"[(ngModel)]="expirydate" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">brand</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="brand"[(ngModel)]="brand" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label">price</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="price"[(ngModel)]="price" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-12">
                         <label for="" class="form-label">sellername</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="sellername"[(ngModel)]="sellername" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-12">
                         <label for="" class="form-label">distname</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="distname"[(ngModel)]="distname" class="form-control">
 
                     </div>
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                        <button class="btn btn-primary">Submit</button>
+                        <button (click)="readValues()" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>
