@@ -13,11 +13,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let i of data">
+        <td>{{i.procode}}</td>
+        <td>{{i.proname}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.expirydate}}</td>
+        <td>{{i.brand}}</td>
+        <td>{{i.price}}</td>
+        <td>{{i.sellername}}</td>
+        <td>{{i.distname}}</td>
       </tr>
     </tbody>
   </table>
